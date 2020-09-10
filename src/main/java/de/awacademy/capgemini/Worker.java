@@ -37,5 +37,5 @@ public class Worker {
 
 	public void setBranch(String branch) {
 		this.branch = branch;
-	
-}
+	}
+}	

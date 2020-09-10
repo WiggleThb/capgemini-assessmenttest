@@ -1,0 +1,13 @@
+server:
+  port: 8181
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_example?createDatabaseIfNotExist=true&useUnicode=yes&characterEncoding=UTF-8
+    username: root
+    password: root
+    initialization-mode: always
+    platform: mysql

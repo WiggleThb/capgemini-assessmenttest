@@ -16,7 +16,7 @@
 	<description>SpringBoot Application for Assessment Training</description>
 
 	<properties>
-		<java.version></java.version>
+		<java.version>14</java.version>
 		<JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
 	</properties>
 

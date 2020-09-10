@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+ 
+  workerapp:
+    depends_on:
+      - db
+    image: aw/workerapp  
+    ports: 
+      - "8181:8181"
+    restart: always
+    environment:
+      MYSQL_HOST: db
+      
